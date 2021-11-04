@@ -80,5 +80,5 @@ for (var prop in forestMassive) {
 }
 
 window.addEventListener("devicemotion", function(event) {
-	document.querySelector("#devicemotiondiv").textContent = event.acceleration.x + "m/s2";
+	document.querySelector("#devicemotiondiv").textContent = event.acceleration.x * 1000 + "m/s2";
 });
