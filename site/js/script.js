@@ -78,3 +78,7 @@ console.log("forestMassive length is " + forestMassive.length);
 for (var prop in forestMassive) {
 	console.log(forestMassive[prop]);
 }
+
+window.addEventListener("devicemotion", function(event) {
+	document.querySelector("#devicemotiondiv").textContent = event.acceleration.x + "m/s2";
+});
